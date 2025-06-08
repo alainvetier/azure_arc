@@ -1,7 +1,7 @@
 az group create --name azurelocal  --location indonesiacentral
 
 az deployment group create -g azurelocal -f "main.bicep" -p "main.bicepparam" \
---parameters tenantID=$TENANT_ID \
+--parameters tenantId=$TENANT_ID \
 --parameters spnProviderId=$SPNPROVIDERID \
 --parameters windowsAdminPassword=$WINDOWSADMINPASSWORD
 
