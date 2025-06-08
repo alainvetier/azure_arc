@@ -82,7 +82,7 @@
     GUIProductKey                        = "WX4NM-KYWYW-QJJR4-XV3QB-6VM33"        # Product key for Windows Server 2019 (Desktop Experience) Datacenter Installation
 
     # SDN Lab Domain
-    SDNDomainFQDN                        = "jumpstart.local"                      # Limit name (not the .com) to 14 characters as the name will be used as the NetBIOS name.
+    SDNDomainFQDN                        = "int2skynet.local"                      # Limit name (not the .com) to 14 characters as the name will be used as the NetBIOS name.
     DCName                               = "jumpstartdc"                          # Name of the domain controller virtual machine (limit to 14 characters)
 
     # NAT Configuration
@@ -96,7 +96,7 @@
     SDNLABMTU                            = 9014                                   # Controls the MTU for all Hosts.
 
     #SDN Provisioning
-    ProvisionNC                          = $false                                 # Provisions Network Controller Automatically.
+    ProvisionNC                          = $true                                 # Provisions Network Controller Automatically.
     ConfigureBGPpeering                  = $true                                  # Peers the GW and MUX VMs with the BGP-ToR-Router automatically if ProvisionNC = $true
 
     ################################################################################################################
